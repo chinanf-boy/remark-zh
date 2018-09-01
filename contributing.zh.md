@@ -3,7 +3,7 @@
 
 > 这个项目有一个[行为守则][coc]. 通过与此存储库,组织或社区进行交互,您同意遵守其条款. 
 
-嗨!👋很高兴你有兴趣贡献!在此之前,请花点时间阅读以下指南. 并感谢您的贡献**备注**!👏👌✨
+嗨!👋很高兴你有兴趣贡献!在此之前,请花点时间阅读以下指南. 并感谢您的贡献**remark**!👏👌✨
 
 除此之外: 参与这个项目的人经常这样做是为了好玩,在他们的日常工作旁边: 你无权享受免费的客户服务. 
 
@@ -22,7 +22,7 @@
 
 ## 生态系统
 
-生态系统由几个组织和单独的项目组成: 其中大多数都很小,其中许多都有实用程序 ([`mdast-UTIL到HAST`][mdast-util-to-hast]) ,一个插件 ([`此言-rehype`][remark-rehype]) ,与生态系统有关 ([`备注`][remark]) . 尽量选择合适的地方,以便我们更快地为您提供帮助. 
+生态系统由几个组织和单独的项目组成: 其中大多数都很小,其中许多都有实用程序 ([`mdast-UTIL到HAST`][mdast-util-to-hast]) ,一个插件 ([`此言-rehype`][remark-rehype]) ,与生态系统有关 ([`remark`][remark]) . 尽量选择合适的地方,以便我们更快地为您提供帮助. 
 
 ## 问题
 
@@ -31,7 +31,7 @@
 -   [**统一**](https://gitter.im/unifiedjs/Lobby)- 与...有关的主题[**统一**][unified]一般来说
 -   [**vfile**](https://gitter.im/vfile/Lobby)- 与...有关的主题[**vfile**][vfile]: 虚拟文件
 -   [**语法树**](https://gitter.im/syntax-tree/Lobby)- 与...有关的主题[**语法树**][syntax-tree]和[**unist**][unist]
--   [**备注**](https://gitter.im/remarkjs/Lobby)- 与...有关的主题[**备注**][remark]生态系统,降价和[**mdast**][mdast]
+-   [**remark**](https://gitter.im/remarkjs/Lobby)- 与...有关的主题[**remark**][remark]生态系统,markdown和[**mdast**][mdast]
 
 ## 捐款
 

@@ -1,68 +1,69 @@
-
 ![remark][logo]
 
 # 入门
 
-**评论**转换标记. 这是一个生态系统[插件][]. 如果你被卡住了,[问题][]和[吉特][]是获得帮助的好地方. 
+**remark**转换 markdown. 这是一个[插件][plugins]生态系统. 如果你被卡住了,[问题][issues]和[Gitter]是获得帮助的好地方.
 
-它是建立在[统一的][]请务必阅读它和它的[网站][]也是. 
+它是建立在[unified]请务必阅读它和它的[网站][website]也是.
 
-## 目录表
+## 目录
 
--   [介绍](#introduction)
--   [命令行](#command-line)
--   [在项目中使用备注](#using-remark-in-a-project)
--   [程序使用](#programmatic-usage)
+<!-- START doctoc -->
+<!-- END doctoc -->
 
 ## 介绍
 
-走出盒子,**评论**转换标记: 降价,重新格式化,和写: 
-
-```md
-# Alpha #
-Bravo charlie **delta** __echo__.
-- Foxtrot
-*  Golf
-+ Hotel
-```
-
-产量: 
+让我们浮于表面先,**remark**转换 markdown 的过程: markdown, 重新格式化,和 复写:
 
 ```md
 # Alpha
 
 Bravo charlie **delta** **echo**.
 
--   Foxtrot
--   Golf
--   Hotel
+- Foxtrot
+
+* Golf
+
+- Hotel
+```
+
+输出:
+
+```md
+# Alpha
+
+Bravo charlie **delta** **echo**.
+
+- Foxtrot
+- Golf
+- Hotel
 ```
 
 但是,可以做得更多,[通过插件][plugins].
 
 ## 命令行
 
-**评论**CLI是从命令行处理标记文件的一种简单方法. 它的接口由[**统一ARG**][unified-args].
+**remark 的**CLI 是从命令行处理 md 文件的一种简单方法. 它的接口由[**unified-args**][unified-args]提供.
 
-安装[`评论CLI`][cli]和依赖关系 (在这种情况下) [衬垫预置][preset]和[`注释HTML`][html]用[npm][]: 
+安装[`remark-cli`][cli]和依赖关系 (在这种情况下 [lint 预置][preset]和[`remark-HTML`][html]),通过[npm][]:
 
 ```sh
 npm install --global remark-cli remark-html remark-preset-lint-markdown-style-guide
 ```
 
-`读数`包含: 
+`readme.md`包含:
 
 ```md
 _Hello_.
 ```
 
-现在,要处理`读数`运行以下内容: 
+现在,要处理`readme.md`运行以下内容:
 
 ```sh
 remark readme.md --use html --use preset-lint-markdown-style-guide
 ```
 
-产量: 
+输出:
 
 ```txt
 <p><em>Hello</em>.</p>
@@ -72,11 +73,11 @@ readme.md.md
 ⚠ 1 warning
 ```
 
-## 在项目中使用备注
+## 在项目中使用 remark
 
-在前面的示例中,`评论CLI`安装在全球范围内. 这通常是个馊主意. 在这里,我们将使用CLI来处理NPM包. 
+在前面的示例中,`remark-cli`安装在全局. 这通常是个馊主意. 在这里,我们将使用 CLI 来处理 NPM 包.
 
-说我们有以下`包装袋`: 
+我们有以下`packgaes`:
 
 ```json
 {
@@ -88,13 +89,13 @@ readme.md.md
 }
 ```
 
-安装`评论CLI`,`注释HTML`和`预置皮棉降价风格指南`作为DEV依赖项进入: 
+安装`remark-cli`,`remark-html`和`preset-lint-markdown-style-guide`作为 DEV 依赖项进入:
 
 ```sh
 npm install --save-dev remark-cli remark-html remark-preset-lint-markdown-style-guide
 ```
 
-这个`ℴℴ保存DeV`选项存储我们的依赖项`包装袋`: 
+这个`--save-dev`选项存储在我们的`packages.json`的开发依赖中:
 
 ```diff
  {
@@ -111,7 +112,7 @@ npm install --save-dev remark-cli remark-html remark-preset-lint-markdown-style-
  }
 ```
 
-然后,我们改变我们`测试`脚本包括注释和添加配置: 
+然后,我们改变我们`测试`脚本,包括 remark 和 添加配置:
 
 ```diff
  {
@@ -135,25 +136,27 @@ npm install --save-dev remark-cli remark-html remark-preset-lint-markdown-style-
  }
 ```
 
-现在我们可以从命令行运行: 
+现在我们可以从命令行运行:
 
 ```sh
 npm test
 ```
 
-这将在测试项目时将所有的标记文件都记录下来. [`--脆弱`][frail]如果发现代码风格违反,则确保命令失败;[`--安静`][quiet]隐藏报告中的成功文件. 
+这将在测试项目时,将所有的 md 文件都记录下来. [`--frail`{脆弱}}}][frail]如果发现违反代码风格,则确保命令失败;[`--quiet`{安静}][quiet]隐藏报告中的成功文件.
 
 ## 程序使用
 
-编程接口**评论**是由[**统一的**][unified].  事实上,[`评论`][api]是两个插件: [`备注解析`][parse]和[`论纲`][stringify].
+编程接口**remark**是由[**unified**][unified]. 事实上,[`remark`][api]是两个插件: [`remark-parse`][parse]和[`remark-stringify`][stringify].
 
-安装[`评论`][api]和依赖关系[npm][]: 
+> 像极了`JSON` 
+
+安装[`remark`][api]和依赖关系, 通过[npm][]:
 
 ```sh
 npm install vfile-reporter remark remark-html remark-preset-lint-markdown-style-guide
 ```
 
-`索引文件`包含: 
+`index.js`包含:
 
 ```js
 var remark = require('remark');
@@ -164,13 +167,13 @@ var report = require('vfile-reporter');
 remark()
   .use(styleGuide)
   .use(html)
-  .process('_Hello_.', function (err, file) {
+  .process('_Hello_.', function(err, file) {
     console.error(report(err || file));
     console.log(String(file));
   });
 ```
 
-`节点索引`产量: 
+`node index.js`输出:
 
 ```txt
   1:1-1:8  warning  Emphasis should use `*` as a marker  emphasis-marker  remark-lint
@@ -182,33 +185,18 @@ remark()
 <!-- Definitions -->
 
 [logo]: https://cdn.rawgit.com/remarkjs/remark/ee78519/logo.svg
-
 [issues]: https://github.com/remarkjs/remark/issues
-
 [gitter]: https://gitter.im/remarkjs/remark
-
 [npm]: https://docs.npmjs.com/cli/install
-
-[api]: https://github.com/remarkjs/remark/tree/master/packages/remark
-
-[cli]: https://github.com/remarkjs/remark/tree/master/packages/remark-cli
-
-[plugins]: https://github.com/remarkjs/remark/tree/master/doc/plugins.md
-
+[api]: https://github.com/chinanf-boy/remark-zh/tree/master/packages/remark
+[cli]: https://github.com/chinanf-boy/remark-zh/tree/master/packages/remark-cli
+[plugins]: https://github.com/chinanf-boy/remark-zh/tree/master/doc/plugins.zh.md
 [unified]: https://github.com/unifiedjs/unified
-
 [website]: https://unifiedjs.github.io
-
 [unified-args]: https://github.com/unifiedjs/unified-args
-
 [frail]: https://github.com/unifiedjs/unified-args#--frail
-
 [quiet]: https://github.com/unifiedjs/unified-args#--quiet
-
-[parse]: https://github.com/remarkjs/remark/tree/master/packages/remark-parse
-
-[stringify]: https://github.com/remarkjs/remark/tree/master/packages/remark-stringify
-
+[parse]: https://github.com/chinanf-boy/remark-zh/tree/master/packages/remark-parse
+[stringify]: https://github.com/chinanf-boy/remark-zh/tree/master/packages/remark-stringify
 [preset]: https://github.com/remarkjs/remark-lint/tree/master/packages/remark-preset-lint-markdown-style-guide
-
 [html]: https://github.com/remarkjs/remark-html

@@ -1,7 +1,7 @@
 
 # 此言-字符串化[![Build Status][build-badge]][build-status] [![Coverage Status][coverage-badge]][coverage-status] [![Chat][chat-badge]][chat]
 
-[编译器][]对于[**统一**][unified]. 字符串化[**MDAST**][mdast]降价的语法树. 用于[**备注**处理器][processor]. 可[扩展][extend]改变markdown的编译方式. 
+[编译器][]对于[**统一**][unified]. 字符串化[**MDAST**][mdast]markdown的语法树. 用于[**remark**处理器][processor]. 可[扩展][extend]改变markdown的编译方式. 
 
 ## 安装
 
@@ -49,7 +49,7 @@ process.stdin
 
 ### `processor.use (stringify [,options]) `
 
-配置`处理器`字符串化[**MDAST**][mdast]降价的语法树. 
+配置`处理器`字符串化[**MDAST**][mdast]markdown的语法树. 
 
 ##### `选项`
 
@@ -57,7 +57,7 @@ process.stdin
 
 ###### `options.gfm`
 
-使用GFM兼容降价所需的转义进行字符串化 (`布尔`,默认: `真正`) . 
+使用GFM兼容markdown所需的转义进行字符串化 (`布尔`,默认: `真正`) . 
 
 -   逃生管 (`|`,对于表格) 
 -   逃生冒号 (`: `,对于文字网址) 
@@ -106,7 +106,7 @@ Stringify for pedantic compatible markdown (`布尔`,默认: `假`) .
 
 ###### `options.stringLength`
 
-函数传递给[`降价表`][markdown-table]检测表格单元格的长度 (`功能`,默认: [`s => s.length`][string-length]) . 
+函数传递给[`markdown表`][markdown-table]检测表格单元格的长度 (`功能`,默认: [`s => s.length`][string-length]) . 
 
 ###### `options.fence`
 

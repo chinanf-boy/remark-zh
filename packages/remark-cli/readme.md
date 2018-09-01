@@ -1,17 +1,16 @@
-
 # 一句话,CLI[![Build Status][build-badge]][build-status] [![Coverage Status][coverage-badge]][coverage-status] [![Chat][chat-badge]][chat]
 
-命令行界面[**备注**][remark]. 
+命令行界面[**remark**][remark].
 
--   加载[`备注-`插件][plugins]
--   搜索[降价扩展][markdown-extensions]
--   忽略找到的路径[`.remarkignore`档][ignore-file]
--   从中加载配置[`.remarkrc`,`.remarkrc.js`档][config-file]
--   使用配置来自[`remarkConfig`中的字段`的package.json`档][config-file]
+- 加载[`remark-`插件][plugins]
+- 搜索[markdown 扩展][markdown-extensions]
+- 忽略找到的路径[`.remarkignore`档][ignore-file]
+- 从中加载配置[`.remarkrc`,`.remarkrc.js`档][config-file]
+- 使用配置来自[`remarkConfig`中的字段`的package.json`档][config-file]
 
 ## 安装
 
-[npm][]: 
+[npm][]:
 
 ```sh
 npm install remark-cli
@@ -30,7 +29,7 @@ $ remark . --use preset-lint-markdown-style-guide
 
 ## CLI
 
-看到[**统一-ARGS**][unified-args],提供接口,以获取有关所有可用选项的更多信息. 
+看下[**统一-ARGS**][unified-args],提供接口,以获取有关所有可用选项的更多信息.
 
 ```txt
 Usage: remark [options] [path | glob ...]
@@ -81,31 +80,17 @@ Examples:
 <!-- Definitions -->
 
 [build-badge]: https://img.shields.io/travis/remarkjs/remark.svg
-
 [build-status]: https://travis-ci.org/remarkjs/remark
-
 [coverage-badge]: https://img.shields.io/codecov/c/github/remarkjs/remark.svg
-
 [coverage-status]: https://codecov.io/github/remarkjs/remark
-
 [chat-badge]: https://img.shields.io/gitter/room/remarkjs/Lobby.svg
-
 [chat]: https://gitter.im/remarkjs/Lobby
-
 [license]: https://github.com/remarkjs/remark/blob/master/LICENSE
-
 [author]: http://wooorm.com
-
 [npm]: https://docs.npmjs.com/cli/install
-
 [remark]: https://github.com/remarkjs/remark
-
 [plugins]: https://github.com/remarkjs/remark/blob/master/doc/plugins.md
-
 [markdown-extensions]: https://github.com/sindresorhus/markdown-extensions
-
 [config-file]: https://github.com/unifiedjs/unified-engine/blob/master/doc/configure.md
-
 [ignore-file]: https://github.com/unifiedjs/unified-engine/blob/master/doc/ignore.md
-
 [unified-args]: https://github.com/unifiedjs/unified-args#cli

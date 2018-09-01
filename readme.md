@@ -31,7 +31,7 @@
 - [ ]  [packages/remark-parse/readme.md](./packages/remark-parse/readme.md)
 - [ ]  [packages/remark-stringify/readme.md](./packages/remark-stringify/readme.md)
 - [ ]  [contribute]
-- [ ]  [docs folder](./docs)
+- [x]  [docs folder](./docs) `1/3`
 
 ### 贡献
 
@@ -57,7 +57,7 @@
 
 **remark**是一个用于处理markdown的[插件][plugins]生态系统. 这不仅是一个`markdown => HTML`的编译器. 它也可以生成和重新格式化markdown. 由[插件][plugins]提供能力来做各种事情: [检查markdown代码样式][remark-lint],[安全地转换为React][remark-react],[添加目录][remark-toc], 要么[编译到man pages][remark-man]. 
 
-它建立在[unified],一定要阅读它和它的[网站][website]. 
+它建立在[unified]之上,一定要阅读它和它的[网站][website]. 
 
 -   [`remark`][api]- 程序化界面
 -   [`remark-cli`][cli]- 命令行界面
@@ -100,7 +100,7 @@
 
 [cli]: ./packages/remark-cli
 
-[插件][plugins]: ./doc/plugins.md
+[plugins]: ./doc/plugins.md
 
 [remark-lint]: https://github.com/remarkjs/remark-lint
 
