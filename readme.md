@@ -11,7 +11,7 @@
 ---
 
 
-## 校对 🀄️
+## 校对 ✅
 
 <!-- doc-templite START generated -->
 <!-- repo = 'remarkjs/remark' -->
@@ -26,12 +26,12 @@
 
 <!-- doc-templite END generated -->
 
-- [ ]  [packages/remark/readme.md](./packages/remark/readme.md)
-- [ ]  [packages/remark-cli/readme.md](./packages/remark-cli/readme.md)
-- [ ]  [packages/remark-parse/readme.md](./packages/remark-parse/readme.md)
-- [ ]  [packages/remark-stringify/readme.md](./packages/remark-stringify/readme.md)
-- [ ]  [contribute]
-- [x]  [docs folder](./docs) `1/3`
+- [x]  [packages/remark/readme.md](./packages/remark/readme.md)
+- [x]  [packages/remark-cli/readme.md](./packages/remark-cli/readme.md)
+- [x]  [packages/remark-parse/readme.md](./packages/remark-parse/readme.md)
+- [x]  [packages/remark-stringify/readme.md](./packages/remark-stringify/readme.md)
+- [x]  [contribute]
+- [x]  [docs folder](./docs)
 
 ### 贡献
 
@@ -42,12 +42,6 @@
 [help me live , live need money 💰](https://github.com/chinanf-boy/live-need-money)
 
 ---
-
-### 目录
-
-<!-- START doctoc -->
-<!-- END doctoc -->
-
 
 # ![remark][logo]
 
@@ -116,7 +110,7 @@
 
 [website]: https://unifiedjs.github.io
 
-[contribute]: contribute.zh.md
+[contribute]: contributing.zh.md
 
 [coc]: https://www.contributor-covenant.org/zh-cn/version/1/4/code-of-conduct
 

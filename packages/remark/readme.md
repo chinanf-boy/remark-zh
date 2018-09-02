@@ -1,14 +1,14 @@
-# remark[![Build Status][build-badge]][build-status] [![Coverage Status][coverage-badge]][coverage-status] [![Chat][chat-badge]][chat]
+# remark [![Build Status][build-badge]][build-status] [![Coverage Status][coverage-badge]][coverage-status] [![Chat][chat-badge]][chat]
 
-该[`remark`][remark]处理器是由降压处理器驱动的[插件][].
+该[`remark`][remark]处理器是由[插件][plugins]驱动的 markdown 处理器.
 
-- 接口[`统一`][unified]
+- [`unified`][unified]定义接口
 - [**MDAST**][mdast]语法树
-- 解析树的 markdown[`此言-解析`][parse]
-- [插件][]改造树
-- 使用将树编译为 markdown[`此言-字符串化`][stringify]
+- 解析 markdown 到树 - [`remark-parse`][parse]
+- [插件][plugins]改造树
+- 使用[`remark-stringify`][stringify]将树编译为 markdown
 
-不需要解析器?还是编译器?[没关系][unified-usage].
+不需要解析器? 还是编译器? [没关系][unified-usage].
 
 ## 安装
 
@@ -51,9 +51,9 @@ remark()
 <h2>Hello world!</h2>
 ```
 
-###### 通过数据设置
+###### 通过data设置
 
-这个例子美化了 markdown 和配置[`此言-解析`][parse]和[`此言-字符串化`][stringify]通过[数据][].
+这个例子通过[data][]美化了 markdown 和配置[`remark-parse`][parse]和[`remark-stringify`][stringify].
 
 ```js
 var remark = require('remark');
@@ -72,9 +72,9 @@ remark()
 _Emphasis_ and **importance**
 ```
 
-###### 通过预设进行设置
+###### 通过preset进行设置
 
-这个例子美化了 markdown 和配置[`此言-解析`][parse]和[`此言-字符串化`][stringify]通过[预置][].
+这个例子通过[预设置][]美化了 markdown 和配置[`remark-parse`][parse]和[`remark-stringify`][stringify].
 
 ```js
 var remark = require('remark');
