@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [制品](#%E5%88%B6%E5%93%81)
+  - [使用 remark 的产品列表](#%E4%BD%BF%E7%94%A8-remark-%E7%9A%84%E4%BA%A7%E5%93%81%E5%88%97%E8%A1%A8)
+    - [集成](#%E9%9B%86%E6%88%90)
+    - [CLIs](#clis)
+    - [应用](#%E5%BA%94%E7%94%A8)
+    - [静态站点生成器](#%E9%9D%99%E6%80%81%E7%AB%99%E7%82%B9%E7%94%9F%E6%88%90%E5%99%A8)
+    - [其他](#%E5%85%B6%E4%BB%96)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ![remark][logo]
 
 # 制品

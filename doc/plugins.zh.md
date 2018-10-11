@@ -11,8 +11,17 @@
 
 ## 目录
 
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [插件列表](#%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8)
+- [预设列表](#%E9%A2%84%E8%AE%BE%E5%88%97%E8%A1%A8)
+- [公用工具清单](#%E5%85%AC%E7%94%A8%E5%B7%A5%E5%85%B7%E6%B8%85%E5%8D%95)
+- [使用插件](#%E4%BD%BF%E7%94%A8%E6%8F%92%E4%BB%B6)
+- [创建插件](#%E5%88%9B%E5%BB%BA%E6%8F%92%E4%BB%B6)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## 插件列表
 
